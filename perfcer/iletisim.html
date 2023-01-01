@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CeR+ </title>
+  <link rel="icon" href="cer.png" >
+  <link rel="stylesheet" href="css/font-awesome.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap%27%27");
+
+    * {
+      font-family: 'Poppins', sans-serif !important;
+      margin: 0px;
+      padding: 0px;
+
+    }
+
+    body {
+      font-family: 'Domine', serif;
+    }
+
+    .menu {
+      background-color: rgb(255, 255, 255);
+      width: 100%;
+      height: 100px;
+      text-align: center;
+
+
+    }
+
+    .menulist {
+      float: center;
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+      font-size: 22px;
+      padding: 15px;
+
+
+    }
+
+    .menulist:hover {
+      border-bottom: solid 2px red;
+      color: rgb(255, 0, 0);
+
+
+    }
+
+
+    .menuright {
+      float: right;
+      margin-top: -85px;
+      margin-right: 140px;
+      background-color: red;
+      border-radius: 40px;
+      font: optional;
+      text-decoration: none;
+      width: 200px;
+      height: 70px;
+      color: rgb(228, 228, 228);
+      border: none;
+      border-bottom: solid 2px rgb(124, 124, 124);
+      font-size: 20px;
+
+    }
+
+    .kayıt {
+      float: right;
+      margin-top: -80px;
+      margin-right: 30px;
+      font: optional;
+      text-decoration: none;
+      width: 200px;
+      height: 70px;
+      color: rgb(255, 0, 0);
+      font-size: 20px;
+    }
+
+    .kayıt:hover {
+
+      color: black;
+    }
+
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .h1 {
+      font-family: "Roboto", sans-serif;
+      color: rgb(0, 0, 0);
+    }
+
+
+
+    a,
+    a:hover {
+      text-decoration: none !important;
+    }
+
+    .text-black {
+      color: rgb(0, 0, 0);
+    }
+
+    .content {
+      padding: 7rem 0;
+    }
+
+    .heading {
+      font-size: 2.5rem;
+      font-weight: 900;
+    }
+
+    .form-control {
+      border-bottom: 2px solid rgb(0, 0, 0);
+      background: #f3f3f3;
+    }
+
+    .form-control:active,
+    .form-control:focus {
+      outline: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      border-color: #000;
+      background: #f3f3f3;
+    }
+
+    .col-form-label {
+      color: #000;
+    }
+
+    .btn,
+    .form-control,
+    .custom-select {
+      height: 50px;
+    }
+
+    .custom-select:active,
+    .custom-select:focus {
+      outline: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      border-color: #000;
+    }
+
+    .btn {
+      border: none;
+      border-radius: 4px !important;
+      box-shadow: 0 15px 20px rgb(0, 0, 0);
+      transition: 2s;
+    }
+
+    .btn:hover {
+      background-color: #000;
+      transition: 2s;
+    }
+
+    .btn.btn-primary {
+      background: rgb(221, 0, 0);
+      color: #fff;
+      padding: 15px 20px;
+    }
+
+    .btn:active,
+    .btn:focus {
+      outline: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+
+    .box {
+      padding: 40px;
+      background: #fff;
+      -webkit-box-shadow: -30px 30px 0px 0 rgba(0, 0, 0, 0.08);
+      box-shadow: -30px 30px 0px 0 rgba(0, 0, 0, 0.08);
+    }
+
+    .box h3 {
+      font-size: 14px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .img-fluid:hover {
+      filter: blur(2px);
+      transition: 2s;
+
+    }
+
+    .footer-dark {
+      padding: 50px 0;
+      color: #ffffff;
+      background-color: #1e1f1d;
+    }
+
+    .footer-dark h3 {
+      margin-top: 0;
+      margin-bottom: 12px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .footer-dark ul {
+      padding: 0;
+      list-style: none;
+      line-height: 1.6;
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+
+    .footer-dark ul a {
+      color: inherit;
+      text-decoration: none;
+      opacity: 0.6;
+    }
+
+    .footer-dark ul a:hover {
+      opacity: 0.8;
+    }
+
+    @media (max-width:767px) {
+      .footer-dark .item:not(.social) {
+        text-align: center;
+        padding-bottom: 20px;
+      }
+    }
+
+    .footer-dark .item.text {
+      margin-bottom: 36px;
+    }
+
+    @media (max-width:767px) {
+      .footer-dark .item.text {
+        margin-bottom: 0;
+      }
+    }
+
+    .footer-dark .item.text p {
+      opacity: 0.6;
+      margin-bottom: 0;
+    }
+
+    .footer-dark .item.social {
+      text-align: center;
+    }
+
+    @media (max-width:991px) {
+      .footer-dark .item.social {
+        text-align: center;
+        margin-top: 20px;
+      }
+    }
+
+    .footer-dark .item.social>a {
+      font-size: 20px;
+      width: 36px;
+      height: 36px;
+      line-height: 36px;
+      display: inline-block;
+      text-align: center;
+      border-radius: 50%;
+      box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+      margin: 0 8px;
+      color: rgb(255, 255, 255);
+      opacity: 0.75;
+    }
+
+    .footer-dark .item.social>a:hover {
+      opacity: 0.9;
+    }
+
+    .footer-dark .copyright {
+      text-align: center;
+      padding-top: 24px;
+      opacity: 0.3;
+      font-size: 13px;
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="menu">
+    <a href="/anasayfa.html"> <img src="/logo.png" width="150px"
+        style="margin-left: 80px; color: black; float: left;  "></a>
+    <br> <br>
+    <a class="menulist" style="margin-left: -120px;" href="/anasayfa.html">Anasayfa</a>
+    <a class="menulist" href="/hakkimizda.html">Hakkımızda</a>
+    <a class="menulist" href="/iletisim.html">İletişim</a>
+    <a class="menulist" href="/blog.html">Blog</a>
+    <a class="menulist" href="/spor.html">Spor Alanlarımız</a>
+    <a class="menulist" href="/takviye.html">Takviye</a>
+    <a class="menulist" href="/fiyat.html">Fiyat Listesi</a>
+    <a class="menulist" href="/soru.html">SSS</a>
+    <br> <br> <br>
+
+    <span class="">
+      <a class="kayıt" href="/login-kayit.html"> <b> Giriş Yap/Kayıt Ol</b></a>
+      <!-- <button class="menuright" onclick="window.location.href = 'login.html'; "> <b>Giriş Yap/Kayıt Ol</b> </button> -->
+    </span>
+    <div class="content">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-10">
+            <div class="row justify-content-center">
+              <div class="col-md-6">
+                <h3 class="heading mb-4">Bana Bir Mesaj İlet!</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas debitis, fugit
+                  natus?</p>
+                <p><img src="https://www.sheknows.com/wp-content/uploads/2018/08/ehebtnkfqn4vnhgc4yxu.jpeg" alt="Image"
+                    class="img-fluid"></p>
+              </div>
+              <div class="col-md-6">
+                <form class="mb-5" method="post" id="contactForm" name="contactForm">
+                  <div class="row">
+                    <div class="col-md-12 form-group">
+                      <input type="text" class="form-control" name="name" id="name" placeholder="İsminiz">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 form-group">
+                      <input type="text" class="form-control" name="email" id="email" placeholder="Emailiniz">
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-12 form-group">
+                      <textarea class="form-control" name="message" id="message" cols="30" rows="7"
+                        placeholder="Mesajınız"></textarea>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12">
+                      <input type="submit" value="Mesajı Gönder" class="btn btn-primary rounded-0 py-2 px-4">
+
+                    </div>
+                  </div>
+                </form>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="footer-dark">
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-md-3 item">
+              <h3>Servisler</h3>
+              <ul>
+                <li><a href="#">Web Site</a></li>
+                <li><a href="#">Masa Üstü</a></li>
+                <li><a href="#">Mobil</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-6 col-md-3 item">
+              <h3>Proje</h3>
+              <ul>
+                <li><a href="#">Web</a></li>
+                <li><a href="#">Tasarım</a></li>
+
+              </ul>
+            </div>
+            <div class="col-md-6 item text">
+              <h3>CerTaiN</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nesciunt porro mollitia enim natus
+                corporis similique ad dignissimos voluptate minus sunt perspiciatis earum facere facilis quo fugiat,
+                voluptates optio. Sapiente!</p>
+            </div>
+            <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i
+                  class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a
+                href="#"><i class="icon ion-social-instagram"></i></a></div>
+          </div>
+          <p class="copyright">copyright <a href="certainsystem.ml"></a> CerTaiN</p>
+        </div>
+      </footer>
+    </div>
+</body>
+
+</html>

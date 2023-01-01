@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CeR+ </title>
+    <link rel="icon" href="cer.png" >
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <style>
+         @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap%27%27");
+
+* {
+  font-family: 'Poppins', sans-serif !important;
+  margin: 0px;
+  padding: 0px;
+
+}
+
+body {
+  font-family: 'Domine', serif;
+}
+
+        .menu {
+      background-color: rgb(255, 255, 255);
+      width: 100%;
+      height: 100px;
+      text-align: center;
+
+
+    }
+
+    .menulist {
+      float: center;
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+      font-size: 22px;
+      padding: 15px;
+
+
+    }
+
+    .menulist:hover {
+      border-bottom: solid 2px red;
+      color: rgb(255, 0, 0);
+
+
+    }
+
+
+    .menuright {
+      float: right;
+      margin-top: -85px;
+      margin-right: 140px;
+      background-color: red;
+      border-radius: 40px;
+      font: optional;
+      text-decoration: none;
+      width: 200px;
+      height: 70px;
+      color: rgb(228, 228, 228);
+      border: none;
+      border-bottom: solid 2px rgb(124, 124, 124);
+      font-size: 20px;
+
+    }
+
+    .kayıt {
+      float: right;
+      margin-top: -80px;
+      margin-right: 30px;
+      font: optional;
+      text-decoration: none;
+      width: 200px;
+      height: 70px;
+      color: rgb(255, 0, 0);
+      font-size: 20px;
+    }
+
+    .kayıt:hover {
+      color: black;
+
+    }
+
+
+    .footer-dark {
+      padding: 50px 0;
+      color: #ffffff;
+      background-color: #1e1f1d;
+    }
+
+    .footer-dark h3 {
+      margin-top: 0;
+      margin-bottom: 12px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .footer-dark ul {
+      padding: 0;
+      list-style: none;
+      line-height: 1.6;
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+
+    .footer-dark ul a {
+      color: inherit;
+      text-decoration: none;
+      opacity: 0.6;
+    }
+
+    .footer-dark ul a:hover {
+      opacity: 0.8;
+    }
+
+    @media (max-width:767px) {
+      .footer-dark .item:not(.social) {
+        text-align: center;
+        padding-bottom: 20px;
+      }
+    }
+
+    .footer-dark .item.text {
+      margin-bottom: 36px;
+    }
+
+    @media (max-width:767px) {
+      .footer-dark .item.text {
+        margin-bottom: 0;
+      }
+    }
+
+    .footer-dark .item.text p {
+      opacity: 0.6;
+      margin-bottom: 0;
+    }
+
+    .footer-dark .item.social {
+      text-align: center;
+    }
+
+    @media (max-width:991px) {
+      .footer-dark .item.social {
+        text-align: center;
+        margin-top: 20px;
+      }
+    }
+
+    .footer-dark .item.social>a {
+      font-size: 20px;
+      width: 36px;
+      height: 36px;
+      line-height: 36px;
+      display: inline-block;
+      text-align: center;
+      border-radius: 50%;
+      box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+      margin: 0 8px;
+      color: rgb(255, 255, 255);
+      opacity: 0.75;
+    }
+
+    .footer-dark .item.social>a:hover {
+      opacity: 0.9;
+    }
+
+    .footer-dark .copyright {
+      text-align: center;
+      padding-top: 24px;
+      opacity: 0.3;
+      font-size: 13px;
+      margin-bottom: 0;
+    }
+    a{
+        text-decoration: none !important;
+    }
+    .rounded-lg {
+  border-radius: 1rem !important;
+}
+
+.text-small {
+  font-size: 0.9rem !important;
+}
+
+.custom-separator {
+  width: 5rem;
+  height: 6px;
+  border-radius: 1rem;
+background-color: red;
+}
+
+.text-uppercase {
+  letter-spacing: 0.2em;
+}
+.btn{
+    background-color: red;
+ 
+    transition: 2s;
+}
+.btn:hover{
+   background-color: black;
+   color: red;
+   transition: 2s;
+
+}
+.faq-header{
+  margin-left: 600px;
+  font-size: 30px;
+  color: red;
+ 
+  padding: 24px;
+}
+
+.faq-content {
+  margin: 0 auto;
+}
+
+.faq-question {
+  margin-left: 500px;
+  padding: 10px 0;
+  
+}
+
+.panel-title {
+  font-size: 24px;
+  width: 80%;
+  position: relative;
+  margin: 0;
+  padding: 10px 10px 0 48px;
+  display: block;
+  cursor: pointer;
+}
+
+.sss {
+  font-size: 20px;
+  padding: 0px 14px;
+  margin: 0 40px;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  position: relative;
+  opacity: 0;
+  -webkit-transition: .4s ease;
+  -moz-transition: .4s ease;
+  -o-transition: .4s ease;
+  transition: .4s ease;
+}
+
+.panel:checked ~ .sss{
+  height: auto;
+  opacity: 1;
+  padding: 14px;
+}
+
+.plus {
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 4px;
+  z-index: 5;
+  font-size: 42px;
+  line-height: 100%;
+  -webkit-user-select: none;    
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-transition: .2s ease;
+  -moz-transition: .2s ease;
+  -o-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.panel:checked ~ .plus {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.panel {
+  display: none;
+}
+
+    </style>
+</head>
+<body>
+  
+    <div class="menu">
+        <a href="/anasayfa.html"> <img src="/logo.png" width="150px"
+            style="margin-left: 80px; color: black; float: left;  "></a>
+        <br> <br>
+        <a class="menulist" style="margin-left: -120px;" href="/anasayfa.html">Anasayfa</a>
+        <a class="menulist" href="/hakkimizda.html">Hakkımızda</a>
+        <a class="menulist" href="/iletisim.html">İletişim</a>
+        <a class="menulist" href="/blog.html">Blog</a>
+        <a class="menulist" href="/spor.html">Spor Alanlarımız</a>
+        <a class="menulist" href="/takviye.html">Takviye</a>
+        <a class="menulist" href="/fiyat.html">Fiyat Listesi</a>
+        <a class="menulist" href="/soru.html">SSS</a>
+        <br> <br> <br>
+    
+        <span class="">
+          <a class="kayıt" href="/login-kayit.html"> <b> Giriş Yap/Kayıt Ol</b></a>
+          <!-- <button class="menuright" onclick="window.location.href = 'login.html'; "> <b>Giriş Yap/Kayıt Ol</b> </button> -->
+        </span>
+
+                </div>
+              </section>
+
+              <div class="faq-header">Sıkça Sorulan Sorular</div>
+
+              <div class="faq-content">
+                <div class="faq-question">
+                  <input id="q1" type="checkbox" class="panel">
+                  <div class="plus">-</div>
+                  <label for="q1" class="panel-title">Bel Tarafımı Nasıl İnceltirim?</label>
+                  <div class="sss">Yalnızca bel bölgesini inceltebilecek bir egzersiz yoktur. İncelmek için yağ yakmalısınız. Vücut yağ yakmaya başladığı zaman kendi genetik şifresine göre tüm bölgelerden değişik oranlarda yağ yakar. Yağ yakmak için kardiyovasküler bir egzersiz yapmalısınız. Yani haftada 3 – 4 kere 25 – 35 dakika boyunca düşük tempoda ve hedef kalp atış hızında bisiklet, koşu, kürek, bisiklet ya da yüzme gibi aerobik (oksijenli solunum yaptıran) bir egzersiz yapmalısınız. Kardiyovasküler egzersiz yağ yakımını hızlandıracak ve size zindelik kazandıracaktır. Yağsız bir diyetle kardiyovasküler egzersizi birleştirdiğinizde vücudunuz genetik şifresine göre çeşitli bölgelerden yağ atacak ve bel bölgeniz bunun sonucunda incelecektir. Mekik ve karın sıkıştırma çalışmaları bu bölgedeki yağları yakmaz, yalnızca buradaki kasları geliştirip gererek, sıkı bir görünüm elde edilmesini sağlar. Bu nedenle sadece mekik çekerek ya da karın sıkıştırma hareketleri yaparak bel bölgesinde gerçek bir incelme yaratamazsınız.</div>
+                </div>
+                
+                <div class="faq-question">
+                  <input id="q2" type="checkbox" class="panel">
+                  <div class="plus">-</div>
+                  <label for="q2" class="panel-title">Spor Süresi Önemlimi?</label>
+                  <div class="sss">Süre amaca göre değişir. Örneğin ağırlık kaldırıyorsanız ve amacınız kaslarınıza hacim kazandırmaksa seansınız 45 dakikayı geçmemelidir. Kaslar uzun süreli çalışmada hacim kaybeder. Kardiyovasküler çalışma yapıyorsanız önerilen en uzun süre 35 dakikadır. Yine de sporun süresi konusunda bir kesinlik yoktur. Süre kişinin sağlık durumu ve kondüsyonuna göre değişir. Örneğin profesyonel sporcular uzun süre antreman yapabilirler. Buna karşın yaşlı kişilerin kalbi zorlamamak için uzun olmayan seanslarla spor yapmaları gerekmektedir. Sporda periyod da amaca bağlı olarak değişir.
+
+                    Spor yapmak için ideal zaman diye bir şeyden söz edilemez. Kimileri için ideal zaman sabah kimileri için akşamüzeri saatleri olabilir. Eğer spora bol vakit ayırabiliyorsanız, aerobik ve kardiyovasküler türde egzersizleri sabah, kas çalışmasına dayanan egzersizleri akşam saatlerinde yapabilirsiniz.</div>
+                </div>
+                
+                <div class="faq-question">
+                  <input id="q3" type="checkbox" class="panel">
+                  <div class="plus">-</div>
+                  <label for="q3" class="panel-title">Sporda Terlemek Mi Yararlı Terlememekmi?</label>
+                  <div class="sss">Terlemek dokularda bulunan sıvıların vücut sıcaklığının yükselmesiyle atılması demektir. Terleme sırasında salgılanmış toksinleri atılır. Bu nedenle spor yaparken terlemek faydalıdır, kendinizi hava akımlarından koruyarak üşütmemek kaydıyla. Zayıflamak isteyen kişiler, egzersiz sırasında bol su atarak bir kilo kaybı yaşarlar. Ancak kilo verme programında gerçek hedef su atmak değil birikmiş yağlardan kurtulmaktır. Atılan su vücut tarafından yeniden yerine konacaktır. Atılmış yağ ise size net bir kilo kaybı sağlar. Bu nedenle terlemenin bir kilo kaybı anlamı taşımayacağını gözden kaçırmamak gerekir.</div>
+                </div>
+                <div class="faq-question">
+                  <input id="q4" type="checkbox" class="panel">
+                  <div class="plus">-</div>
+                  <label for="q4" class="panel-title">Kilo Almak İçin Program Varmı? Fitness Yaparak Nasıl Kilo Alabilirim?</label>
+                  <div class="sss">Kilo almak için spor yapabilirsiniz. Aslında pek çok vücut geliştirmecinin yaptığı da budur. Kaslarınıza kütle kazandıracak bir programla birlikte protein ve karbonhidrattan zengin ve kalorik düzeyi yüksek bir diyet uygulamalısınız. Ayrıca kaliteli ve çabuk sindirilebilen karbonhidrat ve protein tozlarını kullanarak daha kolay kilo alabilirsiniz. Fitness salonunda kilo almak için aşağıdaki prensiplere uygun bir şekilde ağırlık kaldırma çalışması yapmalısınız:
+
+ 
+
+                    Kaldırabileceğiniz maksimum kiloları düşük tekrar sayılarıyla kaldırmalısınız. Buna hipertrofik çalışma adı verilir. (Düşük kiloları yüksek tekrarla çalışma kütle arttırmaz.)
+                    
+                    Beslenme çok önemlidir. Kasların yakıtı glikojen yani karbonhidrattır. Kaslarınızı enerjisiz bırakmadan onlara doğru miktarda karbonhidrat yüklemesi yapmalısınız. Enerjisiz kalan bir kas ağırlık kaldırırken zorlanır, hacmi küçülür.
+                    
+                    Kas yapımı için aminoasit yani proteinler bakımından zengin bir beslenme sürdürmelisiniz. Yumurta, et, süt, yoğurt, soya, kurubaklagiller, balık ve deniz ürünleri menünüzde yer kaplamalıdır. Vücudunuzdaki her kilogram başına 1,5 – 2 gram kadar protein almalısınız.
+                    
+                    Kas çalışması, kütle arttırmanın yalnızca ilk aşamasıdır. Kaslar çalışma sonrasında, dinlenirken onarılır. Beslenip dinlenerek yeniden güç ve hacim kazanır. Bu nedenle, kaslarınızı çalışma sonrasında iyice dinlendirmeli ve çok sık çalışmamalısınız. İyi bir uyku kas gelişiminin ön şartıdır. Bir kas grubunu beş günde birden daha sık çalışmayın.</div>
+                </div>
+                <div class="faq-question">
+                  <input id="q5" type="checkbox" class="panel">
+                  <div class="plus">-</div>
+                  <label for="q5" class="panel-title">Spor Kıyafetlerinin Bir Önemi Var Mıdır? Egzersiz Sırasında Nasıl Bir Kıyafet Giymeliyiz?</label>
+                  <div class="sss">Spor salonunda içinde rahat edeceğiniz, sizi sıkmayan bir kıyafet giymelisiniz. Vücudun hava almasını sağlayan gözenekli yapıda kumaşlardan yapılmış spor giysileri idealdir. Aşırı terletmek yoluyla incelme yarattığı söylenen bel bandı, terleme eşofmanı gibi giysiler ter atmanıza yardımcı olur ama gerçek bir incelme sağlamaz. Eklemlerinizin sakatlanmasını engellemek için dirsek ve dizlerinizi saran bantlar kullanabilirsiniz.</div>
+                </div>
+                <div class="faq-question">
+                  <input id="q6" type="checkbox" class="panel">
+                  <div class="plus">-</div>
+                  <label for="q6" class="panel-title">Kilo Almanın En İyi Yolu Nedir?</label>
+                  <div class="sss">Kilo almanın genel prensibi harcadığınızdan daha çok kalori almanızdır. Ancak yağ olarak kilo almak sağlıklı değildir. Genel kas kütlesini arttıran bir kilo alma yöntemi uygulamalısınız. Bunu yapmanın en iyi yolu  bir Egzersiz programına başlamaktan geçer. Kilo alma programı sırasında yağlardan ziyade karbonhidratlara ağırlık verin ve proteini menünüzden eksik etmeyin. Yılda 6 -7 kilo net kas kütlesi kazanmak iyi bir sonuç sayılmalıdır.</div>
+                </div>
+                <div class="faq-question">
+                  <input id="q7" type="checkbox" class="panel">
+                  <div class="plus">-</div>
+                  <label for="q7" class="panel-title">Spor Salonu Seçerken Neye Dikkat Etmeliyim?</label>
+                  <div class="sss">Bir spor salonu seçerken şu noktalara dikkat edin:
+
+                    Yardımsever hocalar: Hocanızın vereceği danışmanlık sizin için büyük önem taşımaktadır. Özel durumunuzu ve amaçlarınızı ona anlatın, ve size özel bir egzersiz programı yazmasını isteyin. Egzersiz sırasında kafanıza takılan soruları (aletleri kullanma şekli, süre vs) çekinmeden hocanıza danışabilmelisiniz. Bazı salonlarda hocalar gerekli danışmanlık hizmetini vermekte pek istekli olmayabilmektedir. ‘Önemli olan spor yapabileceğim bir yer ve gerekli aletlerdir’diye düşünmeyin. Salon hocası, bir antrenmanın bilimsel ve doğru bir şekilde yapılabilmesini sağlayan en önemli unsurdur.
+                    
+                    Soyunma odaları ve duşlar: Sağlığınızı korumak için soyunma odaları ve duş bölümlerinin hijyenik olmasına dikkat edin. Bu odaların pek çok kişinin ortak kullanım alanı olduğunu unutmayın.
+                    
+                    Aletler: Günümüzde spor aletleri teknolojisi ilerlemiştir. Bazı salonlarda anında ölçüm yapan elektro-mekanik aletler bulunmaktadır. Bu tür şeylerin belli yararları olabileceği kabul edilmekle birlikte, düzgün bir şekilde çalışan, bakımı yapılmış aletler spor yapmak için yeterli görülmelidir.</div>
+                </div>
+                <div class="faq-question">
+                  <input id="q9" type="checkbox" class="panel">
+                  <div class="plus">-</div>
+                  <label for="q9" class="panel-title">Evde Spor Yaparak Kas Oranımı Nasıl Artırabilirim?</label>
+                  <div class="sss">
+                    Başlangıç seviyesinde iseniz evde kuvvet antrenmanlarını tercih ederek var olan kas kütlesini arttırabilirsiniz  ancak kısıtlı ekipman ve ağırlık konusunda ev ortamı kas gelişimi konusunda bize bir seviyeye kadar yardımcı olacaktır.
+                  </div>
+                </div>
+                <div class="faq-question">
+                  <input id="q10" type="checkbox" class="panel">
+                  <div class="plus">-</div>
+                  <label for="q10" class="panel-title">Antrenman Öncesi Ve Sonrası Neler Yemeliyim/Yememeliyim?</label>
+                  <div class="sss">
+                    Herkesin fiziksel durumu, ihtiyaçları ve sindirim alışkanlıkları farklıdır. O yüzden sana net bir öneride bulunamıyoruz. Ancak dikkat etmen gereken temel kurallar elbette var.
+
+                    *İşlenmiş, kötü yağla pişirilmiş ya da kızartılmış gıdalar, yüksek şekerli hazır yiyecekler ve fast food tüketme. Kahveyi ise antrenman günü birkaç fincanın üzerine çıkarma.
+                    
+                    *Antrenmandan en az 2 saat önce yemeyi bırak.
+                    
+                    *Bol yeşillik, az et, bol su tüketirsen, sigaradan ve alkolden de uzak durduysan antrenman senin için daha kolay geçecektir.
+                    
+                    *Antrenman sonrasında ise kaybettiğin enerjiyi hızlıca geri kazandıracak sağlıklı karbonhidratlar tüketebilirsin. Bunun için elma ya da muz işe yarayacaktır.  Ayrıca proteinli smoothie’ler ve barlar da recovery sürecinde etkili olacaktır.
+                  </div>
+                </div>
+                <div class="faq-question">
+                  <input id="q11" type="checkbox" class="panel">
+                  <div class="plus">-</div>
+                  <label for="q11" class="panel-title">Uzaktan Eğitim İle Gelişim Oluyor Mu?</label>
+                  <div class="sss">
+                    Uzaktan eğitimde tüm programlar ‘’kişiye özel’’ hazırlandığı için gelişim olmaması söz konusu değildir. Fakat bu bölümde ‘’kişinin beklentisi nedir?’’ sorusu sorulmalıdır. Gerçekçi hedefler koyarak, kademe kademe gelişim sağlanacağı bilinirse her geçen ay daha fazla motivasyon kazanılacaktır. Bu da pes etmeden, istikrarlı şekilde devam etmek demektir. Bunların dışında ‘’genetik faktör’’ gerçeği vardır. Genetik faktör diğer branşlara nazaran bu spor branşında çok daha önemli bir yere sahiptir. Daha önce hiç spor geçmişi olmayan biriyle, uzun seneler spor geçmişi olan birinin gelişim hızı bir olmayacaktır. Sabırla, istikrarla, azimle ‘’size özel’’ hazırlanan programları eksiksiz uyguladığınız takdirde eninde sonunda gelişim olacaktır!
+                  </div>
+                </div>
+                <div class="faq-question">
+                  <input id="q12" type="checkbox" class="panel">
+                  <div class="plus">-</div>
+                  <label for="q12" class="panel-title">Egzersiz Programları Nasıl Hazırlanıyor?</label>
+                  <div class="sss">
+                    Egzersiz programlarınız ödeme işleminden sonra e-posta adresinize gönderilen ‘’PAR-Q Test’’ sorularına vereceğiniz detaylı yanıtlar doğrultusunda hazırlanmaktadır. Önden,yandan ve arkadan çekip göndereceğiniz güncel form görselleriniz doğrultusunda postür analizi yapılacaktır. Bu analiz sonrasında herhangi bir postür sorunu saptanırsa (kamburluk, bel çukurluğu, dizlerde çarpıklık, omuz düşüklüğü gibi…) öncelikli olarak düzeltici egzersiz planı yapılacaktır. Bununla beraber sportif hedefiniz dikkate alınarak (kas kazanımı, yağ yakımı gibi…) kapsamlı bir program hazırlanmaktadır. Hareketleri doğru teknikle yapabilmeniz için ‘’video destekli’’ içerikler olacaktır.
+                  </div>
+                </div>
+                <div class="faq-question">
+                  <input id="q13" type="checkbox" class="panel">
+                  <div class="plus">-</div>
+                  <label for="q13" class="panel-title">Merdiven Çıkmak Gibi Faaliyetlerin Fitness Açısından Faydası Varmıdır?</label>
+                  <div class="sss">
+                    Bu tür aktivitelerin kilo vermeye etkisi yoktur, denemez; ancak çok etkili olmadığı rahatlıkla söylenebilir. Elbette hareketli bir yaşam tarzı her zaman için iyidir. Asansöre binmek yerine merdiven çıkmak, kısa mesafelerde vasıta kullanmak yerine yürüyüş yapmak, haftasonunda yalnızca televizyon seyretmek yerine bahçe-marangozluk işleri yapmak ya da geziler düzenlemek tercih edilmelidir. Genel olarak böyle aktivitelerde bulunmak sağlık açısından yararlıdır ve metabolizmayı hızlandırıcı etkisi vardır. Ancak hedefli bir şekilde kilo vermek isteniyorsa, programlı bir egzersiz yapmak daha yerinde olacaktır.
+
+                    Sağlıklı yaşam için spora başlamak istiyorum. Evin etrafında, sahilde vs. koşabilirim. Nasıl bir başlangıç uygun olur?
+                    
+                    İlk 3 – 4 hafta düşük tempoda yirmişer dakika, daha sonraki haftalarda düşük tempoda otuzbeşer dakika süren koşular yapabilirsiniz. Temiz havalı bir yerde koşmak oksijenli solunumu olumlu yönde etkileyecek, zindeliğinizi arttıracak, ayrıca varsa fazla yağlarınızı eritmenizi sağlayacaktır. Bu egzersizi bisiklet sürerek de yapabilirsiniz.
+                  </div>
+                </div>
+              </div>
+             
+            <div class="footer-dark">
+                <footer>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-sm-6 col-md-3 item">
+                        <h3>Servisler</h3>
+                        <ul>
+                          <li><a href="#">Web Site</a></li>
+                          <li><a href="#">Masa Üstü</a></li>
+                          <li><a href="#">Mobil</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-6 col-md-3 item">
+                        <h3>Proje</h3>
+                        <ul>
+                          <li><a href="#">Web</a></li>
+                          <li><a href="#">Tasarım</a></li>
+          
+                        </ul>
+                      </div>
+                      <div class="col-md-6 item text">
+                        <h3>CerTaiN</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nesciunt porro mollitia enim natus
+                          corporis similique ad dignissimos voluptate minus sunt perspiciatis earum facere facilis quo fugiat,
+                          voluptates optio. Sapiente!</p>
+                      </div>
+                      <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i
+                            class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a
+                          href="#"><i class="icon ion-social-instagram"></i></a></div>
+                    </div>
+                    <p class="copyright">copyright <a href="certainsystem.ml"></a> CerTaiN</p>
+                  </div>
+                </footer>
+              </div>
+
+             
+  
+</body>
+</html>
